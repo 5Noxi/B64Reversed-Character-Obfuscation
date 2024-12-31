@@ -1,4 +1,4 @@
-# B64Reversed-Math
+# B64Reversed-Math-Obfuscator
 Encodes each line to base64, reverts them & builds the decryption. Afterwards obfuscates all reverted b64 keys with math techniques. Also uses MBA obfuscated commands/strings ;D
 As this is annoying/hard to reverse, don't obfuscate any harmful code with it...
 
