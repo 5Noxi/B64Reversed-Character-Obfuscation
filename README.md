@@ -2,6 +2,7 @@
 Encodes each line to base64, reverts them & builds the decryption. Afterwards obfuscates all reverted b64 keys with math techniques. Also uses MBA obfuscated commands/strings ;D
 As this is annoying/hard to reverse, don't obfuscate any harmful code with it...
 
+**Preview:**
 ![b64pre](https://github.com/5Noxi/B64Reversed-Math/blob/main/NV-RevMath1.png?raw=true)
 ![b64pre2](https://github.com/5Noxi/B64Reversed-Math/blob/main/NV-RevMath2.png?raw=true)
 ### Before
