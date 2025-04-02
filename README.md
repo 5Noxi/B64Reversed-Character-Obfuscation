@@ -16,6 +16,7 @@ As this is annoying/hard to reverse, don't obfuscate any harmful code with it...
 ## Features
 - Base64 **reversal** and **string manipulation**
   - Creates obfuscated vars, using random letters from the "**Arabic, Chinese, Japanese, Russian, Greek, Korean**" alphabets
+  - Takes randomly a amount of 5-10 lines for each B64 string
 - **Mathematical obfuscation** using various techniques to randomize **all reversed b64 lines**
 - Obfuscates **all** commands with randomized MBA presets
 - **Extremely annoying & hard to reverse ;D**
