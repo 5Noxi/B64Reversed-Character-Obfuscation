@@ -35,7 +35,7 @@ $تvρΞψϕNgzχwoνOnxσxiXкΥΦdvnξチ心起ネυдл子ΘケغتvρΞψϕN
 1. Gets b64 format of each line, for example `Tm92ZXJzZQ==`
 2. Reverts it to `==QZzJXZ29mT`
 3. Builds decryption command for it
-```
+```ps
 [syStem.texT.encoDing]::utF8.GeTString([syStem.COnvert]::frombase64STRING(-Join(...)
 ```
 4. Obfuscates **all** commands with MBA (as shown above)
