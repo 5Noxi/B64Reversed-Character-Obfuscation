@@ -1,6 +1,5 @@
 # B64Reversed-Math-Obfuscator
-Encodes each line to base64, reverts them & builds the decryption. Afterwards obfuscates all reverted b64 keys with math techniques. Also uses MBA obfuscated commands/strings ;D
-As this is annoying/hard to reverse, don't obfuscate any harmful code with it...
+Encodes a random of about of `2-6`**lines** with b64, **reverts** them & builds the decoding part. Afterwards obfuscates all reverted b64 keys with **math techniques**.
 
 **Preview:**
 ![b64pre](https://github.com/5Noxi/B64Reversed-Math/blob/main/NV-RevMath1.png?raw=true)
@@ -13,13 +12,14 @@ As this is annoying/hard to reverse, don't obfuscate any harmful code with it...
 ## Discord Server 
 - https://discord.gg/E2ybG4j9jU
 
-## Features
+## Features:
 - Base64 **reversal** and **string manipulation**
   - Creates obfuscated vars, using random letters from the "**Arabic, Chinese, Japanese, Russian, Greek, Korean**" alphabets
-  - Takes randomly a amount of 5-10 lines for each B64 string
-- **Mathematical obfuscation** using various techniques to randomize **all reversed b64 lines**
+  - Each var has a random length of `32-64` chars from the preset & a predefined var
+  -  Takes randomly a amount of `2-6` lines for each B64 string
+- **Mathematical obfuscation** using various techniques to randomize **all reversed b64 lines** - uses numbers from `1000000` up to `999999999` (max)
 - Obfuscates **all** commands with randomized MBA presets
-- **Extremely annoying & hard to reverse ;D**
+- Annoying to reverse
 
 ## Example for MBA obfuscated `frombase64` command
 ```ps
@@ -28,13 +28,13 @@ As this is annoying/hard to reverse, don't obfuscate any harmful code with it...
 
 Obfuscated var example:
 ```ps
-$تvρΞψϕNgzχwoνOnxσxiXкΥΦdvnξチ心起ネυдл子ΘケغتvρΞψϕNgzχwoνOnxσxi
+$вογιNوϖoχtσnξOxιΔXψнгzIΞqF理БШフエ些سеヲ有вογιNوϖoχtσnξOxιΔXψ
 ```
 
-## User-friendly explanation
+## User friendly explanation:
 1. Gets b64 format of each line, for example `Tm92ZXJzZQ==`
 2. Reverts it to `==QZzJXZ29mT`
-3. Builds decryption command for it
+3. Builds decryption command for it (including reverse part):
 ```ps
 [syStem.texT.encoDing]::utF8.GeTString([syStem.COnvert]::frombase64STRING(-Join(...)
 ```
@@ -49,8 +49,7 @@ $تvρΞψϕNgzχwoνOnxσxiXкΥΦdvnξチ心起ネυдл子ΘケغتvρΞψϕN
 `. \NV-Rev64.Math.ps1;reversed -nvi "\Test.ps1" -nvo "\Reversed.ps1"`
 
 ## Warning
-You probably can't encrypt **big files** with it! If you want to know how to use it for whole files, join the discord server.
-Also: **Don't be a kiddo**, I uploaded the script *open source and for free*, stealing it now would be **unbelievable** ;D *(sad)* 
+You probably can't obfuscate **complicated code** with it! **Don't be a kiddo**, I uploaded the script *open source and for free*, stealing it now would be **unbelieveable** sad.
 
 ## Disclaimer 
 **I'm not responsible for any misuse of this tool!**
