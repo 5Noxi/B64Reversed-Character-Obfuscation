@@ -21,17 +21,17 @@ Encodes a random of about of `2-6`**lines** with b64, **reverts** them & builds 
 - Obfuscates **all** commands with randomized MBA presets
 - Annoying to reverse
 
-### Example of obfuscated `frombase64` command:
+#### Example of obfuscated `frombase64` command:
 ```ps
 ([char](((55 -Band 6708) + (55 -Bor 6708) + 1326 - 8019))+[char]((-3766 - 6100 + 9349 + 599))+[char](((-4234 -Band 3291) + (-4234 -Bor 3291) - 8845 + 9867))+[char](((-8050 -Band 6192) + (-8050 -Bor 6192) + 4340 - 2405))+[char](((-14861 -Band 7409) + (-14861 -Bor 7409) - 271 + 7789))+[char]((5715 - 8922 + 1287 + 1985))+[char](((6544 -Band 7874) + (6544 -Bor 7874) - 6162 - 8173))+[char](((-1209 -Band 6187) + (-1209 -Bor 6187) - 276 - 4633))+[char]((2515 - 3825 - 6060 + 7424))+[char](((5333 -Band 1018) + (5333 -Bor 1018) - 7498 + 1199))+[char](((-8337 -Band 4462) + (-8337 -Bor 4462) + 188 + 3770))+[char]((-300 - 411 - 1962 + 2757))+[char](((-9604 -Band 4993) + (-9604 -Bor 4993) + 6600 - 1907))+[char](((-11046 -Band 2272) + (-11046 -Bor 2272) + 9314 - 435))+[char](((967 -Band 8319) + (967 -Bor 8319) - 7360 - 1816))+[char](((3041 -Band 1800) + (3041 -Bor 1800) - 9458 + 4720)))
 ```
 
-### Obfuscated var example:
+#### Obfuscated var example:
 ```ps
 $вογιNوϖoχtσnξOxιΔXψнгzIΞqF理БШフエ些سеヲ有вογιNوϖoχtσnξOxιΔXψ
 ```
 
-## User friendly explanation:
+#### User friendly explanation:
 1. Gets b64 format of each line, for example `Tm92ZXJzZQ==`
 2. Reverts it to `==QZzJXZ29mT`
 3. Builds decryption command for it (including reverse part):
