@@ -1,5 +1,5 @@
-﻿#    Base64 Reversed & Math Obfuscated
-#    Copyright (C) 2024 Noverse
+#    Base64 Reversal & Math Obfuscation
+#    Copyright (C) 2025 Noverse
 #
 #    This program is proprietary software: you may not copy, redistribute, or modify
 #    it in any way without prior written permission from Noverse.
@@ -19,7 +19,7 @@ sv -Scope Global -Name "ErrorActionPreference" -Value "stop"
 sv -Scope Global -Name "ProgressPreference" -Value "SilentlyContinue"
 iwr 'https://github.com/5Noxi/5Noxi/releases/download/Logo/nvbanner.ps1' -o "$env:temp\nvbanner.ps1";. $env:temp\nvbanner.ps1
 $host.ui.rawui.BackgroundColor = "black"
-$host.ui.rawui.WindowTitle = "Noxi's Base64 Reverser & Math Obfuscator"
+$host.ui.rawui.WindowTitle = "Noxi's Base64 Reversal & Math Obfuscator"
 clear
 
 function log {
@@ -31,11 +31,11 @@ function log {
     Write-Host -ForegroundColor $MessageColor " $Message" -NoNewline
     Write-Host -ForegroundColor $SequenceColor " $Sequence"
 }
-function number {param ([int]$min = 10,[int]$max = 999999);return Get-random -Minimum $min -Maximum $max}
+function number {param ([int]$min = 1000000,[int]$max = 999999999);return Get-random -Minimum $min -Maximum $max}
 
 function nvrandom {
     param ()
-    $length = Get-random -Minimum 32 -Maximum 64
+    $length = Get-random -Minimum 32 -Maximum 65
     $base64chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهوي的一是不了人在有我他这中大来上国个说们为子和你地出道也时年得就那要下以生会自着去之过家学对可里后小么心多天而能好没把看起发成只如事行方所然家种事成者部都其些主样理她两高长机当从动同工使点明问力与アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンАаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯяΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω"
     $nvrandomstring = -join (1..($length - 8) | ForEach-Object { $base64chars[(Get-random -Minimum 0 -Maximum $base64chars.Length)] })
     $vars = @("ЖفнψNΔgοnξνoηλgOΩxиXιΒиΦIςΟθ","ΞسqЖNνυζФnرαOοψηζΦχйXxσкIυиi","بчهΛNφnЮxϒηοOΞχنΦdгωXzεΤIο","ςФκNωнqЯnΞΟйoжzмσцγxXλиΥIر","γтοοNnνцoΩЖξλOzψχxηXϕgτIϖΛ","كξНζNnοΨgχοсρxOнλςzXϕγIτϖ","δνwφйqNΥnχαgολOبγXτΘΨIσξxη","οzψخrNnξοgχzOνϒϕxoXλqнIβζ","ΨχКNصrΩnΨζxيΦOοαξXΛυξoIθγ","чقτNΛξοϒεΨшzχOnζxXωηλΦIρo","вογιNوϖoχtσnξOxιΔXψнгzIΞqF","uςΦNrηnzгtoΘχOσxζXkqيϒIβξo","ςcNεdмzxαχnΨOqζγoXΘυϖxIΩΛ","رщwNαЙxnψgηχsOoϖΦXξζtnIοξ","vوlнϒiNχσζΦξkOnxγXnoФجυIo","βoϒлнNxvγΨiχΦOzntXoxξkIqΥχ","χυΘNتnqξψΦiOxζоgσXΛγboοIxh","ژоυϕвNknxψوgOχqξXζxiοΨβInρo","χqvNوсrξnxηψоζOϖoσXΛηФxIiб","تvρΞψϕNgzχwoνOnxσxiXкΥΦdvnξ") | Get-random
@@ -51,13 +51,12 @@ function reversed {
     if (-not (Test-Path $nvi)) {bannerred;log "[-]" "Input file not found" -highlightcolor red
     log "[/]" "Press any key to exit" -HighlightColor Yellow
     [System.Console]::ReadKey() > $null;exit}
-    .([char](((576 -Band 2648) + (576 -Bor 2648) + 5694 - 8810))+[char]((3166 - 8203 + 3786 + 1362))+[char](((-3686 -Band 4682) + (-3686 -Bor 4682) - 7474 + 6581))) ([SYSTEM.text.ENcOdInG]::Utf8.GEtString((91, 33, 93))) ([SySTeM.text.ENCODing]::UTf8.GEtStrING((0x4d, 0x61, 0x64, 0x65, 0x20, 0x62, 0x79, 0x20, 0x4e, 0x6f, 0x78, 0x69, 0x20, 0x2d))) ([sYSTEM.text.EnCodInG]::UtF8.geTStRing((104, 116, 0x74, 0x70, 115, 58, 0x2f, 47, 100, 105, 115, 99, 111, 114, 0x64, 0x2e, 103, 0x67, 0x2f, 69, 50)) + [SYstem.TEXT.EnCODInG]::uTF8.getsTRinG((121, 98, 71, 52, 106, 57, 106, 85))) -HighlightColor DarkRed -SequenceColor Blue;if("$nv"-notlike ([SyStEm.tEXT.enCoDING]::UTf8.GEtStRIng((42, 78)) + [sYsTeM.tExt.EncoDIng]::uTF8.getStRINg((0x6f, 0x78)) + [SYSTeM.text.ENCoDiNG]::UTF8.gEtsTRInG([systEm.cOnverT]::froMBaSe64String('aSo=')))){.([char](((-12285 -Band 1493) + (-12285 -Bor 1493) + 5155 + 5752))+[char](((-2805 -Band 8237) + (-2805 -Bor 8237) + 3146 - 8466))+[char]((580 - 335 + 5552 - 5685))+[char](((-14392 -Band 3990) + (-14392 -Bor 3990) + 1552 + 8965))) -Id $pId}; sleep 1
-    log "[+]" "Reading content" "- $nvi" -highlightcolor green -sequencecolor darkgray
+    log "[~]" "Reading content" "- $nvi" -highlightcolor Gray -sequencecolor darkgray
     $lines = Get-Content -Path $nvi | Where-Object { -not [string]::IsNullOrWhiteSpace($_) }
     $nvstubpre = @()
     $index = 0
     while ($index -lt $lines.Count) {
-        $chunksize = Get-Random -Minimum 3 -Maximum 11
+        $chunksize = Get-Random -Minimum 2 -Maximum 7
         $endindex = [Math]::Min($index + $chunksize - 1, $lines.Count - 1)
         $chunk = $lines[$index..$endindex] -join "`n"
         $index += $chunksize
@@ -78,7 +77,7 @@ function reversed {
                 if (-not ($usedvars.Value -is [System.Collections.ArrayList])) {$usedvars.Value = @()}
                 $basevar = $vars | Get-random
                 while ($true) {
-                    $length = Get-random -Minimum 5 -Maximum 10
+                    $length = Get-random -Minimum 32 -Maximum 65
                     $base64chars = "ابتثجحخدذرزسشصضطظعغفقكلمنهوي的一是不了人在有我他这中大来上国个说们为子和你地出道也时年得就那要下以生会自着去之过家学对可里后小么心多天而能好没把看起发成只如事行方所然家种事成者部都其些主样理她两高长机当从动同工使点明问力与アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンアイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲンАаБбВвГгДдЕеЁёЖжЗзИиЙйКкЛлМмНнОоПпРрСсТтУуФфХхЦцЧчШшЩщЪъЫыЬьЭэЮюЯяΑαΒβΓγΔδΕεΖζΗηΘθΙιΚκΛλΜμΝνΞξΟοΠπΡρΣσΤτΥυΦφΧχΨψΩω"
                     $nvrandoms = -join (1..$length | ForEach-Object { $base64chars[(Get-random -Minimum 0 -Maximum $base64chars.Length)] })
                     $combinedvar = $basevar + $nvrandoms
@@ -93,7 +92,7 @@ function reversed {
                 $linenumber = $lineIndex + 2
                 foreach ($pattern in $nvtarg) {
                     if ($linecon -match $pattern) {
-                        log "[~]" "Encoding line" "$lineNumber/$allLines" -HighlightColor gray -SequenceColor Green;sleep -Milliseconds 10
+                        log "[~]" "Obfuscating line" "$lineNumber/$allLines" -HighlightColor gray -SequenceColor blue;sleep -Milliseconds 10
                         $modifiedc++}}}
             foreach ($nvtarglsingle in $nvtargl) {
                 $targindex = $nvstubpre.IndexOf($nvtarglsingle)
@@ -252,11 +251,10 @@ function reversed {
         $nvjoin = @('join', 'Join', 'jOin', 'JOin', 'JOIN', 'joIn') | Get-Random
         $nvstubpre += "`$$basevar = ""$base64reversed"""
         $nvstubpre += "`$$chararrayvar = `$$basevar.$nvtoarray();`$$chararrayvar = `$$basevar.$nvtoarray();[$nvarray]::$nvreverse(`$$chararrayvar);`$$reversedVar = [$nvsystem.$nvtext.$nvencoding]::$nvuft.$nvgetstring([$nvsystem.$nvconvert]::$nvb64s(-$nvjoin(`$$chararrayvar)));$nvinvokes `$$reversedVar"
-        log "[+]" "Revesed to" "$base64reversed" -highlightcolor green -sequencecolor yellow;sleep -Milliseconds 10
+        log "[~]" "Revesed to" "$base64reversed" -highlightcolor gray -sequencecolor blue;sleep -Milliseconds 10
         log "[~]" "Used vars: $baseVar & $chararrayvar" -highlightcolor gray;sleep -Milliseconds 10}
     $obfuscode = mathobf $nvstubpre
-    log "[+]" "Writing obfuscated content" "- $nvo" -highlightcolor green -SequenceColor DarkGray
+    log "[+]" "Output at" "- $nvo" -highlightcolor green -SequenceColor DarkGray
     $obfuscode | Out-File -FilePath $nvo -Encoding UTF8
-    .([char](((-9649 -Band 7444) + (-9649 -Bor 7444) + 3033 - 720))+[char]((6370 - 420 - 9175 + 3336))+[char](((4406 -Band 5823) + (4406 -Bor 5823) - 9769 - 357))) ([SySTEm.tEXt.EnCOdIng]::utf8.GeTSTRIng((0x5b, 0x2a)) + [sYstEM.TEXt.EncodiNG]::Utf8.GetsTRINg(93)) ([sySTEM.TExt.encODiNg]::utf8.GetSTRING((0x44, 0x6f, 0x6e, 0x65, 0x21, 0x20, 0x4a, 0x6f, 0x69, 0x6e, 0x20, 0x74, 0x68, 0x65, 0x20, 0x64)) + [SystEm.TEXt.eNcOdiNg]::utf8.getstRIng((0x69, 115, 99, 111, 114, 100, 0x20, 0x73, 0x65, 0x72, 118, 101, 0x72, 32, 102, 111, 114, 32, 109, 0x6f, 114, 0x65)) + [sYstem.TExT.EncoDIng]::UTF8.GEtstrInG((0x20, 0x2d))) ([SYSTEm.TEXt.ENCodINg]::utF8.getSTRiNg([sYstem.conveRt]::FROmBaSE64STring('aHR0cHM6Ly9kaXNjb3JkLmdnLw==')) + [SYsteM.TeXt.eNCoDInG]::utF8.getStRIng((69, 50, 121, 98, 71, 52, 106, 57, 106, 85))) -highlightcolor blue -sequencecolor magenta
     log "[/]" "Press any key to exit" -HighlightColor Yellow
     [System.Console]::ReadKey() > $null}
