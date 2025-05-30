@@ -1,25 +1,22 @@
 # B64Reversed-Math-Obfuscator
-Encodes a random of about of `2-6`**lines** with b64, **reverts** them & builds the decoding part. Afterwards obfuscates all reverted b64 keys with **math techniques**.
+Obfuscates a random of about of `2-6`**lines** with b64, **reverts** them & builds the decoding part. Afterwards obfuscates all reverted B64 commands with **math techniques**.
 
 **Preview:**
-![b64pre](https://github.com/5Noxi/B64Reversed-Math/blob/main/NV-RevMath1.png?raw=true)
-![b64pre2](https://github.com/5Noxi/B64Reversed-Math/blob/main/NV-RevMath2.png?raw=true)
+![b64pre](https://github.com/5Noxi/B64Reversed-Math/blob/main/rev1.png?raw=true)
+![b64pre2](https://github.com/5Noxi/B64Reversed-Math/blob/main/rev2.png?raw=true)
 ### Before
-![before](https://github.com/5Noxi/B64Reversed-Math/blob/main/Before.png?raw=true) 
+![before](https://github.com/5Noxi/B64Reversed-Math/blob/main/before.png?raw=true) 
 ### After
-![after](https://github.com/5Noxi/B64Reversed-Math/blob/main/After.png?raw=true)
-
-## Discord Server 
-- https://discord.gg/E2ybG4j9jU
+![after](https://github.com/5Noxi/B64Reversed-Math/blob/main/after.png?raw=true)
 
 ## Features:
-- Base64 **reversal** and **string manipulation**
+- Base64 **reversal** and **string obfuscation**
   - Creates obfuscated vars, using random letters from the "**Arabic, Chinese, Japanese, Russian, Greek, Korean**" alphabets
-  - Each var has a random length of `32-64` chars from the preset & a predefined var
-  -  Takes randomly a amount of `2-6` lines for each B64 string
-- **Mathematical obfuscation** using various techniques to randomize **all reversed b64 lines** - uses numbers from `1000000` up to `999999999` (max)
-- Obfuscates **all** commands with randomized MBA presets
-- Annoying to reverse
+  - Each var has a random length of `32-64` chars from the preset & a predefined string
+  -  Takes randomly a amount of `2-6` lines
+- **Math obfuscation** using various techniques to randomize **all reversed b64 lines** - uses numbers from `1000000` up to `999999999` (max)
+- Obfuscates **all** commands with randomized presets
+- And much more...
 
 #### Example of obfuscated `frombase64` command:
 ```ps
@@ -49,7 +46,7 @@ $вογιNوϖoχtσnξOxιΔXψнгzIΞqF理БШフエ些سеヲ有вογιNو�
 `. \NV-Rev64.Math.ps1;reversed -nvi "\Test.ps1" -nvo "\Reversed.ps1"`
 
 ## Warning
-You probably can't obfuscate **complicated code** with it! **Don't be a kiddo**, I uploaded the script *open source and for free*, stealing it now would be **unbelieveable** sad.
+You probably can't obfuscate **complicated code** with it! **Don't be a kiddo**, I uploaded the script *open source and for free*, stealing it now would be **unbelieveable** sad. **I'm not responsible for any misuse of this tool!**
 
-## Disclaimer 
-**I'm not responsible for any misuse of this tool!**
+## Discord Server 
+- https://discord.gg/E2ybG4j9jU
