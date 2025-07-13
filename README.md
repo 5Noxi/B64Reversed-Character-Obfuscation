@@ -18,7 +18,9 @@ $closing = if ($bracket -eq '{') { '}' } else { ')' }
 It tracks nested brackets and uses the whole block as string, otherwise each line get's encoded on it's own.
 
 `Detailed Logging` - Displays the block start/end or line
+
 `Add Dead Branches` - Adds dead `if` blocks, each `FromBase64String` method gets it's own
+
 `One Invoke` - Fastest start, lowest security (decoded all at once, one `ToBase64String`)
 
  ## Discord Server 
