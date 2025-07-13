@@ -1,6 +1,6 @@
 # Base64 Reversal & Character Obfuscation
 
-Obfuscates with B64, reverts them & builds the decoding part. Afterwards obfuscates all reverted B64 commands with character obfuscation.  It detects the correct line amount per encoding string automatically. Variable names and everything else has either a obfuscated preset or gets created with random caps. `Input File` is mandatory, if the `Output File` path isn't set, it'll use the current file name and adds `NV-`.
+Encodeswith B64, reverts them & builds the decoding part. Afterwards obfuscates all reverted B64 commands with character obfuscation.  It detects the correct line amount per encoding string automatically. Variable names and everything else has either a obfuscated preset or gets created with random caps. `Input File` is mandatory, if the `Output File` path isn't set, it'll use the current file name and adds `NV-`.
 
 1. Encodes the string to B64, e.g. `Tm92ZXJzZQ==`
 2. Reverts it to `==QZzJXZ29mT`
