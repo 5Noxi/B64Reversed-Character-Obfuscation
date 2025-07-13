@@ -1,5 +1,4 @@
 # Base64 Reversal & Character Obfuscation
--# https://github.com/5Noxi/B64Reversed-Math-Obfuscator
 
 Obfuscates with B64, reverts them & builds the decoding part. Afterwards obfuscates all reverted B64 commands with character obfuscation.  It detects the correct line amount per encoding string automatically. Variable names and everything else has either a obfuscated preset or gets created with random caps. `Input File` is mandatory, if the `Output File` path isn't set, it'll use the current file name and adds `NV-`.
 
