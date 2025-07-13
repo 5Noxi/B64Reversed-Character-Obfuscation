@@ -2,6 +2,10 @@
 
 Encodes with B64, reverts them & builds the decoding part. Afterwards obfuscates all reverted B64 commands with character obfuscation.  It detects the correct line amount per encoding string automatically. Variable names and everything else has either a obfuscated preset or gets created with random caps. `Input File` is mandatory, if the `Output File` path isn't set, it'll use the current file name and adds `NV-`.
 
+Preview:
+
+https://github.com/user-attachments/assets/2b876ac2-29f6-4321-a372-91f595ae02ae
+
 1. Encodes the string to B64, e.g. `Tm92ZXJzZQ==`
 2. Reverts it to `==QZzJXZ29mT`
 3. Builds decoding command for it (including reverse part):
